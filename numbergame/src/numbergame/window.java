@@ -65,7 +65,7 @@ public class window extends MyFrame implements ActionListener{
 		}
 		else {
 			JOptionPane.showMessageDialog(this,"Game Over");
-			
+			MyFrame frame=new MyFrame();
 		}
 	}
 	}
