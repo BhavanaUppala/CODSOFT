@@ -38,25 +38,24 @@ public class window extends MyFrame implements ActionListener{
 		
 	try {
 		if(x<1 || x>100) {
-			JOptionPane.showMessageDialog(null,"Enter a number between 1 to 100");
+			JOptionPane.showMessageDialog(this,"Enter a number between 1 to 100");
+			return;
 		}
 		
-//			x=Integer.parseInt(JOptionPane.showInputDialog("Enter a number between 1 to 100"));
 		if(x<n) {
-			JOptionPane.showMessageDialog(null,"Your number is less than the generated number");
+			JOptionPane.showMessageDialog(this,"Your number is less than the generated number");
 		}
 		else if(x>n) {
-			JOptionPane.showMessageDialog(null,"Your number is bigger than the generated number");
+			JOptionPane.showMessageDialog(this,"Your number is bigger than the generated number");
 		}
 		else {
-			JOptionPane.showMessageDialog(null,"Hurry! You Win !");
+			JOptionPane.showMessageDialog(this,"Hurry! You Win !");
 			return;
 		}
 		chance++;
-		
 		if(chance>max_chance && x!=n) {
-			JOptionPane.showMessageDialog(null,"You loose and the genrated number is"+n);
-			TryAgain=JOptionPane.showConfirmDialog(null, "Do you want to continue?", "Select an option", JOptionPane.YES_NO_OPTION);
+			JOptionPane.showMessageDialog(this,"You loose and the genrated number is "+n);
+			TryAgain=JOptionPane.showConfirmDialog(this, "Do you want to continue?", "Select an option", JOptionPane.YES_NO_OPTION);
 		
 		if(TryAgain==JOptionPane.YES_OPTION) {
 			

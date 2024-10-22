@@ -37,7 +37,6 @@ public class MyFrame extends JFrame implements ActionListener{
 	@Override
 	public void actionPerformed(ActionEvent e) {
 	if(e.getSource()==btn1) {
-		//Random_Method rdm=new Random_Method();
 		window w=new window();
 	
 	}
