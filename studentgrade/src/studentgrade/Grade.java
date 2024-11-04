@@ -1,17 +1,13 @@
 package studentgrade;
-
-
 import java.awt.Font;
-
 import javax.swing.*;
-
 public class Grade{ 
 	JFrame f;
 	JTextField t;
 	JLabel l;
 	JTable table;
 	JScrollPane scrollpane;
-	String[] columns= {"marks","grade"};
+	String[] columns= {"Marks","Grade"};
 	Object[][] data= {{"91-100",'A'},
 			{"81-90",'B'},{"71-80",'C'},{"61-70",'D'},{"51-60",'E'},{"<=50",'F'}};
 			
